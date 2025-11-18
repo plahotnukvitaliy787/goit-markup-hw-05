@@ -102,6 +102,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin: 0 auto;
 }
 .hero-title {
     font-size: 56px;
@@ -248,8 +249,13 @@ img {
 }
 .portfolio-list-object {
     width: calc((100% - 48px) / 3); 
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.portfolio-list-object:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .portfolio-name-object {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
